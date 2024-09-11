@@ -1,0 +1,296 @@
+
+#web .webSlider .slider .s2 .s2-1{
+    width: 500px;
+    height: 400px;
+    
+}
+#web .webSlider .slider .s2 .s2-2{
+    width: 500px;
+    height: 400px;
+    
+}
+#web .webSlider .slider .s2 .s2-1 img{
+    width: 100%;
+    
+    transform: translateX(50%);
+    width: 80%;
+}
+#web .webSlider .slider .s2 .s2-2 h2{
+    font-size: 30px;
+    color: #fff;
+    
+}
+#web .webSlider .slider .s2 .s2-2 h3{
+    font-size: 17px;
+    
+    color: #fff;
+    font-weight: 300;
+}
+#web .webSlider .slider .s2 .s2-2 p{
+    font-size: 17px;
+    
+    color: #fff;
+    font-weight: 300;
+}
+#web .webSlider .slider .s2 .s2-2 a:first-child{
+    width: 185px;
+    height: 43px;
+    
+    z-index: 100;
+    background-color: #fff;
+    left: 0;
+}
+#web .webSlider .slider .s2 .s2-2 a{
+    width: 185px;
+    height: 43px;
+    
+    z-index: 100;
+    background-color: #00FF75;
+    left: 200px;
+}
+#web .webSlider .slider .s2 .s2-2 p img{
+    
+    ;
+    
+}
+#web .webSlider .slider .s2 .s2-2 p img:nth-child(2){
+    
+}
+#web .webSlider .slider .s2 .s2-2 p img:nth-child(3){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+#web .webSlider .slider .s3 .s3-1{
+    width: 500px;
+    height: 400px;
+    
+}
+#web .webSlider .slider .s3 .s3-2{
+    width: 500px;
+    height: 400px;
+    
+}
+#web .webSlider .slider .s3 .s3-1 img{
+    width: 100%;
+    
+    width: 80%;
+}
+
+/* s3-1 */
+
+#web .webSlider .slider .s3 .s3-2 h2{
+    font-size: 30px;
+    color: #fff;
+    
+}
+#web .webSlider .slider .s3 .s3-2 h3{
+    font-size: 17px;
+    
+    color: #fff;
+    font-weight: 300;
+}
+#web .webSlider .slider .s3 .s3-2 p{
+    font-size: 17px;
+    
+    color: #fff;
+    font-weight: 300;
+}
+#web .webSlider .slider .s3 .s3-2 a:first-child{
+    width: 185px;
+    height: 43px;
+    
+    z-index: 100;
+    background-color: #fff;
+    left: 0;
+}
+#web .webSlider .slider .s3 .s3-2 a{
+    width: 185px;
+    height: 43px;
+    
+    z-index: 100;
+    background-color: #00FF75;
+    left: 200px;
+}
+#web .webSlider .slider .s3 .s3-2 p img{
+    
+    
+}
+#web .webSlider .slider .s3 .s3-2 p img:nth-child(2){
+    
+}
+#web .webSlider .slider .s3 .s3-2 p img:nth-child(3){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+#web .webSlider .slider .s4 .s4-1{
+    width: 500px;
+    height: 400px;
+    
+}
+#web .webSlider .slider .s4 .s4-2{
+    width: 500px;
+    height: 400px;
+    
+}
+#web .webSlider .slider .s4 .s4-1 img{
+    width: 100%;
+    
+    width: 80%;
+}
+
+
+
+/* s4-1 */
+
+#web .webSlider .slider .s4 .s4-2 h2{
+    font-size: 30px;
+    color: #fff;
+    
+}
+#web .webSlider .slider .s4 .s4-2 h3{
+    font-size: 17px;
+    
+    color: #fff;
+    font-weight: 300;
+}
+#web .webSlider .slider .s4 .s4-2 p{
+    font-size: 17px;
+    
+    color: #fff;
+    font-weight: 300;
+}
+#web .webSlider .slider .s4 .s4-2 a:first-child{
+    width: 185px;
+    height: 43px;
+    
+    z-index: 100;
+    background-color: #fff;
+    left: 0;
+}
+#web .webSlider .slider .s4 .s4-2 a{
+    width: 185px;
+    height: 43px;
+    
+    z-index: 100;
+    background-color: #00FF75;
+    
+}
+#web .webSlider .slider .s4 .s4-2 p img{
+    
+    
+}
+#web .webSlider .slider .s4 .s4-2 p img:nth-child(2){
+    
+}
+#web .webSlider .slider .s4 .s4-2 p img:nth-child(3){
+    
+}
+
+
+
+
+
+
+
+
+
+#web .webSlider .slider .s5 .s5-1{
+    width: 500px;
+    height: 400px;
+    
+}
+#web .webSlider .slider .s5 .s5-2{
+    width: 500px;
+    height: 400px;
+    
+}
+#web .webSlider .slider .s5 .s5-1 img{
+    width: 100%;
+    
+}
+
+
+
+
+/* s5-1 */
+
+#web .webSlider .slider .s5 .s5-2 h2{
+    font-size: 30px;
+    color: #fff;
+    
+}
+#web .webSlider .slider .s5 .s5-2 h3{
+    font-size: 17px;
+    
+    color: #fff;
+    font-weight: 300;
+}
+#web .webSlider .slider .s5 .s5-2 p{
+    font-size: 17px;
+    
+    color: #fff;
+    font-weight: 300;
+}
+#web .webSlider .slider .s5 .s5-2 a:first-child{
+    width: 185px;
+    height: 43px;
+    
+    z-index: 100;
+    background-color: #fff;
+    left: 0;
+}
+#web .webSlider .slider .s5 .s5-2 a{
+    width: 185px;
+    height: 43px;
+    
+    background-color: #00FF75;
+    left: 200px;
+    color: #000;
+}
+#web .webSlider .slider .s5 .s5-2 p img{
+    
+    
+}
+#web .webSlider .slider .s5 .s5-2 p img:nth-child(2){
+    
+}
+#web .webSlider .slider .s5 .s5-2 p img:nth-child(3){
+    
+}
+.pager{
+    position: absolute;
+    bottom: 160px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+.pager li{
+    width: 17px; height: 17px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 5px;
+    background-color: #bbb;
+}
+.pager li.on{
+    background-color: #000;
+}

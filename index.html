@@ -4,522 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>slider_pager</title>
-    <style>
-        *{margin: 0; padding: 0; list-style: none;}
-        #wrap>div{
-            height: 100vh;
-        }
-        #wrap .hash{
-            list-style: none;
-            position: fixed;
-            top: 20px; right: 20px;
-            color: #444;
-            font-weight: bold;
-        }
-        #wrap .hash li{
-            float: left;
-            margin-top: 13px;
-            margin-left: 20px;
-            color: #888;
-        }
-        #wrap .hash li.on{
-            color: #000;
-        }
-
-        #web h1{
-            font-weight: bold;
-            font-size: 40px;
-            text-align: center;
-            padding-top: 160px;
-
-        }
-
-        #portfolio {
-            background: url(img/main\ intro.png) no-repeat center top / cover;
-            height: 100vh;
-        }
-        #portfolio img{
-            /* width: 100%; */
-        }
-        #web,#banner {position: relative;}
-        #web .webSlider{
-            width: 1000px;
-            height: 350px;
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            overflow: hidden;
-        }
-
-        #web .webSlider .slider{
-            position: relative;
-        }
-        ul::after{
-            content: '';
-            display: block;
-            clear: both;
-        }
-        #web .webSlider .slider li{
-            float: left;
-            width: 1000px;
-            height: 350px;
-            font-size: 100px;
-            text-align: center;
-            line-height: 400px;
-            color: #eee;
-            font-size: 0;
-        }
-        #web .webSlider .slider li.s1{background-color: #000; position: relative;}
-        #web .webSlider .slider li.s2{background-color: #101010; position: relative;}
-        #web .webSlider .slider li.s3{background-color: #101010; position: relative;}
-        #web .webSlider .slider li.s4{background-color: #101010; position: relative;}
-        #web .webSlider .slider li.s5{background-color: #000; position: relative;}
-
-        #web .webSlider .slider .s1 .s1-1{
-            width: 500px;
-            height: 400px;
-            background-color: #000;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        #web .webSlider .slider .s1 .s1-1 img{
-            width: 100%;
-
-        }
-        #web .webSlider .slider .s1 .s1-2{
-            width: 500px;
-            height: 400px;
-            background-color: #000;
-
-        }
-        #web .webSlider .slider .s1 .s1-2 h2{
-            font-size: 30px;
-            color: #fff;
-
-        }
-        #web .webSlider .slider .s1 .s1-2 h3{
-            font-size: 17px;
-
-            color: #fff;
-            font-weight: 300;
-        }
-        #web .webSlider .slider .s1 .s1-2 p{
-            font-size: 17px;
-
-            color: #fff;
-            font-weight: 300;
-        }
-        #web .webSlider .slider .s1 .s1-2 a:first-child{
-            width: 185px;
-            height: 43px;
-
-            z-index: 100;
-            background-color: #fff;
-            left: 0;
-        }
-        #web .webSlider .slider .s1 .s1-2 a{
-            width: 185px;
-            height: 43px;
-
-            background-color: #00FF75;
-            left: 200px;
-            color: #000;
-            font-size: 15px;
-            text-align: center;
-        }
-        #web .webSlider .slider .s1 .s1-2 .link h4{
-            color: yellowgreen;
-            font-size: 16px;
-
-            z-index: 100;
-        }
-        #web .webSlider .slider .s1 .s1-2 .link h5{
-            color: #000;
-            font-size: 16px;
-
-            z-index: 100;
-        }
-
-/* link */
-
-
-        #web .webSlider .slider .s1 .s1-2 p img{
-
-        }
-        #web .webSlider .slider .s1 .s1-2 p img:nth-child(2){
-
-        }
-        #web .webSlider .slider .s1 .s1-2 p img:nth-child(3){
-
-        }
-
-
-
-
-
-
-        #web .webSlider .slider .s2 .s2-1{
-            width: 500px;
-            height: 400px;
-            
-        }
-        #web .webSlider .slider .s2 .s2-2{
-            width: 500px;
-            height: 400px;
-            
-        }
-        #web .webSlider .slider .s2 .s2-1 img{
-            width: 100%;
-            
-            transform: translateX(50%);
-            width: 80%;
-        }
-        #web .webSlider .slider .s2 .s2-2 h2{
-            font-size: 30px;
-            color: #fff;
-            
-        }
-        #web .webSlider .slider .s2 .s2-2 h3{
-            font-size: 17px;
-            
-            color: #fff;
-            font-weight: 300;
-        }
-        #web .webSlider .slider .s2 .s2-2 p{
-            font-size: 17px;
-            
-            color: #fff;
-            font-weight: 300;
-        }
-        #web .webSlider .slider .s2 .s2-2 a:first-child{
-            width: 185px;
-            height: 43px;
-            
-            z-index: 100;
-            background-color: #fff;
-            left: 0;
-        }
-        #web .webSlider .slider .s2 .s2-2 a{
-            width: 185px;
-            height: 43px;
-            
-            z-index: 100;
-            background-color: #00FF75;
-            left: 200px;
-        }
-        #web .webSlider .slider .s2 .s2-2 p img{
-            
-            ;
-            
-        }
-        #web .webSlider .slider .s2 .s2-2 p img:nth-child(2){
-            
-        }
-        #web .webSlider .slider .s2 .s2-2 p img:nth-child(3){
-            
-        }
-
-
-
-
-
-
-
-
-
-
-
-        #web .webSlider .slider .s3 .s3-1{
-            width: 500px;
-            height: 400px;
-            
-        }
-        #web .webSlider .slider .s3 .s3-2{
-            width: 500px;
-            height: 400px;
-            
-        }
-        #web .webSlider .slider .s3 .s3-1 img{
-            width: 100%;
-            
-            width: 80%;
-        }
-
-/* s3-1 */
-
-        #web .webSlider .slider .s3 .s3-2 h2{
-            font-size: 30px;
-            color: #fff;
-            
-        }
-        #web .webSlider .slider .s3 .s3-2 h3{
-            font-size: 17px;
-            
-            color: #fff;
-            font-weight: 300;
-        }
-        #web .webSlider .slider .s3 .s3-2 p{
-            font-size: 17px;
-            
-            color: #fff;
-            font-weight: 300;
-        }
-        #web .webSlider .slider .s3 .s3-2 a:first-child{
-            width: 185px;
-            height: 43px;
-            
-            z-index: 100;
-            background-color: #fff;
-            left: 0;
-        }
-        #web .webSlider .slider .s3 .s3-2 a{
-            width: 185px;
-            height: 43px;
-            
-            z-index: 100;
-            background-color: #00FF75;
-            left: 200px;
-        }
-        #web .webSlider .slider .s3 .s3-2 p img{
-            
-            
-        }
-        #web .webSlider .slider .s3 .s3-2 p img:nth-child(2){
-            
-        }
-        #web .webSlider .slider .s3 .s3-2 p img:nth-child(3){
-            
-        }
-
-
-
-
-
-
-
-
-
-
-
-        #web .webSlider .slider .s4 .s4-1{
-            width: 500px;
-            height: 400px;
-            
-        }
-        #web .webSlider .slider .s4 .s4-2{
-            width: 500px;
-            height: 400px;
-            
-        }
-        #web .webSlider .slider .s4 .s4-1 img{
-            width: 100%;
-            
-            width: 80%;
-        }
-
-
-
-        /* s4-1 */
-
-        #web .webSlider .slider .s4 .s4-2 h2{
-            font-size: 30px;
-            color: #fff;
-            
-        }
-        #web .webSlider .slider .s4 .s4-2 h3{
-            font-size: 17px;
-            
-            color: #fff;
-            font-weight: 300;
-        }
-        #web .webSlider .slider .s4 .s4-2 p{
-            font-size: 17px;
-            
-            color: #fff;
-            font-weight: 300;
-        }
-        #web .webSlider .slider .s4 .s4-2 a:first-child{
-            width: 185px;
-            height: 43px;
-            
-            z-index: 100;
-            background-color: #fff;
-            left: 0;
-        }
-        #web .webSlider .slider .s4 .s4-2 a{
-            width: 185px;
-            height: 43px;
-            
-            z-index: 100;
-            background-color: #00FF75;
-            
-        }
-        #web .webSlider .slider .s4 .s4-2 p img{
-            
-            
-        }
-        #web .webSlider .slider .s4 .s4-2 p img:nth-child(2){
-            
-        }
-        #web .webSlider .slider .s4 .s4-2 p img:nth-child(3){
-            
-        }
-
-
-
-
-
-
-
-
-
-        #web .webSlider .slider .s5 .s5-1{
-            width: 500px;
-            height: 400px;
-            
-        }
-        #web .webSlider .slider .s5 .s5-2{
-            width: 500px;
-            height: 400px;
-            
-        }
-        #web .webSlider .slider .s5 .s5-1 img{
-            width: 100%;
-            
-        }
-
-
-
-
-        /* s5-1 */
-
-        #web .webSlider .slider .s5 .s5-2 h2{
-            font-size: 30px;
-            color: #fff;
-            
-        }
-        #web .webSlider .slider .s5 .s5-2 h3{
-            font-size: 17px;
-            
-            color: #fff;
-            font-weight: 300;
-        }
-        #web .webSlider .slider .s5 .s5-2 p{
-            font-size: 17px;
-            
-            color: #fff;
-            font-weight: 300;
-        }
-        #web .webSlider .slider .s5 .s5-2 a:first-child{
-            width: 185px;
-            height: 43px;
-            
-            z-index: 100;
-            background-color: #fff;
-            left: 0;
-        }
-        #web .webSlider .slider .s5 .s5-2 a{
-            width: 185px;
-            height: 43px;
-            
-            background-color: #00FF75;
-            left: 200px;
-            color: #000;
-        }
-        #web .webSlider .slider .s5 .s5-2 p img{
-            
-            
-        }
-        #web .webSlider .slider .s5 .s5-2 p img:nth-child(2){
-            
-        }
-        #web .webSlider .slider .s5 .s5-2 p img:nth-child(3){
-            
-        }
-
-
-
-
-
-
-
-
-        .pager{
-            position: absolute;
-            bottom: 160px;
-            width: 100%;
-            left: 0;
-            text-align: center;
-        }
-        .pager li{
-            width: 17px; height: 17px;
-            border-radius: 100%;
-            display: inline-block;
-            margin: 0 5px;
-            background-color: #bbb;
-        }
-        .pager li.on{
-            background-color: #000;
-        }
-
-
-        #banner h1{
-            font-weight: bold;
-            font-size: 40px;
-            text-align: center;
-            padding-top: 160px;
-
-        }
-        #banner .bannerSlider{
-            width: 1000px;
-            height: 350px;
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            overflow: hidden;
-        }
-        #banner .bannerSlider .slider{
-            position: relative;
-        }
-        ul::after{
-            content: '';
-            display: block;
-            clear: both;
-        }
-        #banner .bannerSlider .slider li{
-            float: left;
-            width: 1000px;
-            height: 350px;
-            font-size: 100px;
-            text-align: center;
-            line-height: 400px;
-            color: #eee;
-            font-size: 0;
-        }
-        #banner .bannerSlider .slider li.s1{position: relative;}
-        #banner .bannerSlider .slider li.s2{position: relative;}
-        #banner .bannerSlider .slider li.s3{position: relative;}
-        #banner .bannerSlider .slider li.s4{background-color: #555;}
-        #banner .bannerSlider .slider li.s5{background-color: #666;}
-
-
-        #banner .bannerSlider .slider li.s1 img{width: auto; height: 100%;}
-        #banner .bannerSlider .slider li.s2 img{width: 100%; height: auto; position: absolute; top: 20%; transform: translate(-50%);} 
-        #banner .bannerSlider .slider li.s3 img{width: auto; height: 100%;} 
-
-
-
-
-
-    </style>
+    <!-- slick plugin -->
+   <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <!-- css -->
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
 </head>
 <body>
 <div id="wrap">
     <ul class="hash">
-        <li class="on">#Portfolio intro</li>
-        <li>#Web Design</li>
-        <li>#Banner Design</li>
+        <li class="on"><a href="#">#Portfolio intro</a></li>
+        <li><a href="#">#Web Design</a></li>
+        <li><a href="#">#Banner Design</a></li>
     </ul> 
     <div id="portfolio">
         <!-- <img src="img/main intro.png" alt=""> -->
@@ -528,34 +25,32 @@
         <h1>Web Redesign Project</h1>
         <div class="webSlider">
             <ul class="slider">
-                <li class="s1">S1
-                    <div class="s1-1">s1-1
+                <li class="slick_slide">
+                    <div class="s1-1">
                         <img src="img/madecaprime_full.png" alt="">
                     </div>
                     <div class="s1-2">
                         <h2>마데카 프라임</h2>
-                        <h3>제작기간 : 40시간/1주일 소요</h3><br>
-                        <p>사용 프로그램
-                            <img src="img/photoshop_icon.png" alt="">
-                            <img src="img/illustrator_icon.png" alt="">
-                            <img src="img/figma_icon.png" alt="">
-                        </p><br>
-                        
+                        <h3>제작기간 : 40시간/1주일 소요</h3>
+                        <p>
+                            <span>사용 프로그램</span>
+                           <span> 
+                                <img src="img/photoshop_icon.png" alt="">
+                                <img src="img/illustrator_icon.png" alt="">
+                                <img src="img/figma_icon.png" alt="">
+                           </span>
+                        </p>
                         <div class="link">
-                            <a href="#">
-                                Wireframe / Prototype
-                            </a>
-                            <a href="#"></a>
-                            <h4>Wireframe / Prototype</h4>
-                            <h5>최종 프로젝트 결과 확인</h5>
+                            <a href="#">Wireframe / Prototype</a>
+                            <a href="#">최종 프로젝트 결과 확인</a>
                         </div>
                     </div>
                 </li>
-                <li class="s2">S2
-                    <div class="s2-1">s2-1
+                <li class="slick_slide">S2
+                    <div class="s1-1">s2-1
                         <img src="img/studiopers.png" alt="">
                     </div>
-                    <div class="s2-2">
+                    <div class="s1-2">
                         <h2>스튜디오퍼스</h2>
                         <h3>제작기간 : 30시간/5일 소요</h3><br>
                         <p>사용 프로그램
@@ -570,11 +65,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="s3">S3
-                    <div class="s3-1">s3-1
+                <li class="slick_slide">S3
+                    <div class="s1-1">s3-1
                         <img src="img/plac.png" alt="">
                     </div>
-                    <div class="s3-2">
+                    <div class="s1-2">
                         <h2>플랙</h2>
                         <h3>제작기간 : 24시간/4일 소요</h3><br>
                         <p>사용 프로그램
@@ -589,11 +84,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="s4">S4
-                    <div class="s4-1">s4-1
+                <li class="slick_slide">S4
+                    <div class="s1-1">s4-1
                         <img src="img/bunjang.png" alt="">
                     </div>
-                    <div class="s4-2">
+                    <div class="s1-2">
                         <h2>번개장터</h2>
                         <h3>제작기간 : 40시간/1주일 소요</h3><br>
                         <p>사용 프로그램
@@ -608,11 +103,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="s5">S5
-                    <div class="s5-1">s5-1
+                <li class="slick_slide">S5
+                    <div class="s1-1">s5-1
                         <img src="img/verygoodtour_full.png" alt="">
                     </div>
-                    <div class="s5-2">
+                    <div class="s1-2">
                         <h2>참좋은 여행</h2>
                         <h3>제작기간 : 40시간/1주일 소요</h3><br>
                         <p>사용 프로그램
@@ -629,13 +124,6 @@
                 </li>
             </ul>
         </div>
-        <ul class="pager">
-            <li class="on"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
     </div>
     <div id="banner">
         <h1>Banner Design</h1>
@@ -670,9 +158,17 @@
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
 
-        let w = $('.slider li').width(),
+        //웹 프로젝트 슬라이드
+        $('.webSlider .slider').slick({
+           // autoplay:true,
+            //autoplaySpeed: 5000000,
+           // dots: true,
+        });
+        
+        /*let w = $('.slider li').width(),
             c = $('.slider li').length;
         
         $('.slider').width(w*c);
@@ -686,7 +182,7 @@
             //2. 내가 클릭한 li의 색상이 바뀜
             $('.pager li').removeClass('on');
             $(this).addClass('on');
-        })
+        })*/
 
 
 

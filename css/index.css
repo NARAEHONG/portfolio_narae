@@ -1,0 +1,197 @@
+*{margin: 0; padding: 0; list-style: none;}
+#wrap>div{
+    height: 100vh;
+}
+#wrap .hash{
+    list-style: none;
+    position: fixed;
+    top: 20px; right: 20px;
+    color: #444;
+    font-weight: bold;
+}
+#wrap .hash li{
+    float: left;
+    margin-top: 13px;
+    margin-left: 20px;
+    color: #888;
+}
+#wrap .hash li.on{
+    color: #000;
+}
+
+#web h1{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 160px;
+
+}
+
+#portfolio {
+    background: url(../img/intro.png) no-repeat center top / cover;
+    height: 100vh;
+}
+#portfolio img{
+    /* width: 100%; */
+}
+#web,#banner {position: relative;}
+#web .webSlider{
+    width: 1000px;
+    height: 350px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#web .webSlider .slider{
+    position: relative;
+}
+ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#web .webSlider .slider li{
+    /* float: left; */
+    width: 1000px;
+    height: 350px;
+    font-size: 100px;
+    text-align: center;
+    line-height: 400px;
+    color: #eee;
+    font-size: 0;
+    background: darkgreen;
+    /* 프로젝트 이미지, 정보 옆으로 정렬하는 flex */
+    display:flex;
+}
+#web .webSlider .slider li.s1{background-color: red;position: relative;display: flex;}
+#web .webSlider .slider li.s2{background-color: #101010; position: relative;}
+#web .webSlider .slider li.s3{background-color: #101010; position: relative;}
+#web .webSlider .slider li.s4{background-color: #101010; position: relative;}
+#web .webSlider .slider li.s5{background-color: #000; position: relative;}
+
+#web .webSlider .slider .slick_slide .s1-1{
+    width: 500px;
+    /* height: 400px; */
+    /* background-color: aqua; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0; */
+}
+#web .webSlider .slider .slick_slide .s1-1 img{
+    width: 100%;
+
+}
+#web .webSlider .slider .slick_slide .s1-2{
+    width: 500px;
+    /* height: 400px; */
+    /* background-color: aqua; */
+    text-align: left;
+}
+#web .webSlider .slider .slick_slide .s1-2 h2{
+    font-size: 30px;
+    color: #fff;
+
+}
+#web .webSlider .slider .slick_slide .s1-2 h3{
+    font-size: 17px;
+
+    color: #fff;
+    font-weight: 300;
+}
+#web .webSlider .slider .slick_slide .s1-2 p{
+    font-size: 17px;
+
+    color: #fff;
+    font-weight: 300;
+}
+#web .webSlider .slider .slick_slide .s1-2 p span {display:block; padding:5px 0;}
+#web .webSlider .slider .slick_slide .s1-2 a:first-child{
+    width: 185px;
+    height: 43px;
+
+    z-index: 100;
+    background-color: #fff;
+    left: 0;
+}
+#web .webSlider .slider .slick_slide .s1-2 a{
+    width: 185px;
+    height: 43px;
+
+    background-color: #00FF75;
+    left: 200px;
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+}
+#web .webSlider .slider .slick_slide .s1-2 .link h4{
+    color: yellowgreen;
+    font-size: 16px;
+
+    z-index: 100;
+}
+#web .webSlider .slider .slick_slide .s1-2 .link h5{
+    color: #000;
+    font-size: 16px;
+
+    z-index: 100;
+}
+
+/* link */
+
+
+#web .webSlider .slider .slick_slide .s1-2 p img{
+
+}
+#web .webSlider .slider .slick_slide .s1-2 p img:nth-child(2){
+
+}
+#web .webSlider .slider .slick_slide .s1-2 p img:nth-child(3){
+
+}
+
+
+#banner h1{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 160px;
+
+}
+#banner .bannerSlider{
+    width: 1000px;
+    height: 350px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+#banner .bannerSlider .slider{
+    position: relative;
+}
+ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#banner .bannerSlider .slider li{
+    float: left;
+    width: 1000px;
+    height: 350px;
+    font-size: 100px;
+    text-align: center;
+    line-height: 400px;
+    color: #eee;
+    font-size: 0;
+}
+#banner .bannerSlider .slider li.s1{position: relative;}
+#banner .bannerSlider .slider li.s2{position: relative;}
+#banner .bannerSlider .slider li.s3{position: relative;}
+#banner .bannerSlider .slider li.s4{background-color: #555;}
+#banner .bannerSlider .slider li.s5{background-color: #666;}
+
+
+#banner .bannerSlider .slider li.s1 img{width: auto; height: 100%;}
+#banner .bannerSlider .slider li.s2 img{width: 100%; height: auto; position: absolute; top: 20%; transform: translate(-50%);} 
+#banner .bannerSlider .slider li.s3 img{width: auto; height: 100%;} 
