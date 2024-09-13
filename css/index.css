@@ -61,7 +61,8 @@ ul::after{
     line-height: 400px;
     color: #eee;
     font-size: 0;
-    background: darkgreen;
+    background: #101010;
+    border-radius: 10px;
     /* 프로젝트 이미지, 정보 옆으로 정렬하는 flex */
     display:flex;
 }
@@ -73,70 +74,94 @@ ul::after{
 
 #web .webSlider .slider .slick_slide .s1-1{
     width: 500px;
-    /* height: 400px; */
-    /* background-color: aqua; */
+    
+    
     /* position: absolute; */
     /* left: 0; */
     /* top: 0; */
 }
-#web .webSlider .slider .slick_slide .s1-1 img{
-    width: 100%;
 
+
+
+#web .webSlider .slider .slick_slide .s1-1full{
+    margin-left: -70px;
+    margin-top: -5px;
+}
+#web .webSlider .slider .slick_slide .s1-1full img{
+    width: 56%;
+}
+#web .webSlider .slider .slick_slide .s1-2full{
+    margin-left: -75px;
+}
+
+
+
+
+#web .webSlider .slider .slick_slide .s1-1 img{
+    width: 80%;
+}
+#web .webSlider .slider .slick_slide .s1-1Madeca img{
+    width: 75%;
+}
+#web .webSlider .slider .slick_slide .s1-1Madeca{
+    margin-left: -40px;
+    margin-top: -21px;
+}
+#web .webSlider .slider .slick_slide .s1-1Very img{
+    width: 75%;
+}
+#web .webSlider .slider .slick_slide .s1-1Very{
+    margin-left: -57px;
+    margin-top: -27px;
 }
 #web .webSlider .slider .slick_slide .s1-2{
     width: 500px;
-    /* height: 400px; */
-    /* background-color: aqua; */
     text-align: left;
+    align-items: center;
+    margin-top: 80px;
 }
+#web .webSlider .slider .slick_slide .s1-2Madeca{
+    margin-left: -40px;
+}
+#web .webSlider .slider .slick_slide .s1-2Very{
+    margin-left: -40px;
+}
+
 #web .webSlider .slider .slick_slide .s1-2 h2{
     font-size: 30px;
     color: #fff;
-
+    margin-bottom: 15px;
 }
 #web .webSlider .slider .slick_slide .s1-2 h3{
     font-size: 17px;
-
     color: #fff;
     font-weight: 300;
+    margin-bottom: 7px;
 }
 #web .webSlider .slider .slick_slide .s1-2 p{
     font-size: 17px;
-
     color: #fff;
     font-weight: 300;
 }
-#web .webSlider .slider .slick_slide .s1-2 p span {display:block; padding:5px 0;}
-#web .webSlider .slider .slick_slide .s1-2 a:first-child{
-    width: 185px;
-    height: 43px;
-
-    z-index: 100;
-    background-color: #fff;
-    left: 0;
+#web .webSlider .slider .slick_slide .s1-2 p span{display:block; padding:5px 0; color: #fff;}
+#web .webSlider .slider .slick_slide .s1-2 .link{
+    margin-top: 20px;
 }
-#web .webSlider .slider .slick_slide .s1-2 a{
-    width: 185px;
+#web .webSlider .slick_slide .s1-2 .link a:first-child{
     height: 43px;
-
+    background-color: #fff;
+    padding: 5px;
+    margin-right: 10px;
+}
+#web .webSlider .slick_slide .s1-2 .link a{
+    height: 43px;
+    padding: 5px;
     background-color: #00FF75;
-    left: 200px;
     color: #000;
-    font-size: 15px;
+    font-size: 13.5px;
     text-align: center;
 }
-#web .webSlider .slider .slick_slide .s1-2 .link h4{
-    color: yellowgreen;
-    font-size: 16px;
 
-    z-index: 100;
-}
-#web .webSlider .slider .slick_slide .s1-2 .link h5{
-    color: #000;
-    font-size: 16px;
-
-    z-index: 100;
-}
 
 /* link */
 
@@ -195,3 +220,41 @@ ul::after{
 #banner .bannerSlider .slider li.s1 img{width: auto; height: 100%;}
 #banner .bannerSlider .slider li.s2 img{width: 100%; height: auto; position: absolute; top: 20%; transform: translate(-50%);} 
 #banner .bannerSlider .slider li.s3 img{width: auto; height: 100%;} 
+
+
+
+
+
+// Styling the default Slick dots
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	
+	margin: 0;
+	padding: 1rem 0;
+	
+	list-style-type: none;
+	
+		li {
+			margin: 0 0.25rem;
+		}
+	
+		button {
+			display: block;
+			width: 1rem;
+			height: 1rem;
+			padding: 0;
+			
+			border: none;
+			border-radius: 100%;
+			background-color: blue;
+			
+			text-indent: -9999px;
+		}
+	
+		li.slick-active button {
+			background-color: red;
+		}
+	
+}
