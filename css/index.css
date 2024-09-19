@@ -1,32 +1,26 @@
 *{margin: 0; padding: 0; list-style: none;}
-#wrap>div{
-    height: 100vh;
-}
-#wrap .hash{
-    list-style: none;
+/* 공통 내비게이션 시작 */
+nav {
     position: fixed;
+    z-index:999;
     top: 20px; right: 20px;
     color: #444;
     font-weight: bold;
 }
-#wrap .hash li{
-    float: left;
-    margin-top: 13px;
+nav a{
     margin-left: 20px;
     color: #888;
 }
-#wrap .hash li.on{
+nav .on{
     color: #000;
 }
-
 #web h1{
     font-weight: bold;
     font-size: 40px;
     text-align: center;
     padding-top: 160px;
-
 }
-
+/* =============================포폴소개 */
 #portfolio {
     background: url(../img/intro.png) no-repeat center top / cover;
     height: 100vh;
@@ -35,54 +29,37 @@
     /* width: 100%; */
 }
 #web,#banner {position: relative;}
+/* =============================웹디자인 */
 #web .webSlider{
     width: 1000px;
-    height: 350px;
-    position: absolute;
+    margin:100px auto 0;
+    /* position: absolute;
     top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
+    transform: translate(-50%, -50%); */
 }
-
 #web .webSlider .slider{
     position: relative;
 }
-ul::after{
+/* ul::after{
     content: '';
     display: block;
     clear: both;
-}
-#web .webSlider .slider li{
+} */
+#web .webSlider .slider .slick_slide{
     /* float: left; */
     width: 1000px;
     height: 350px;
     font-size: 100px;
     text-align: center;
-    line-height: 400px;
+    /* line-height: 400px; */
     color: #eee;
     font-size: 0;
     background: #101010;
-    border-radius: 10px;
     /* 프로젝트 이미지, 정보 옆으로 정렬하는 flex */
     display:flex;
+    overflow: hidden;
+    border-radius: 10px;
 }
-#web .webSlider .slider li.s1{background-color: red;position: relative;display: flex;}
-#web .webSlider .slider li.s2{background-color: #101010; position: relative;}
-#web .webSlider .slider li.s3{background-color: #101010; position: relative;}
-#web .webSlider .slider li.s4{background-color: #101010; position: relative;}
-#web .webSlider .slider li.s5{background-color: #000; position: relative;}
-
-#web .webSlider .slider .slick_slide .s1-1{
-    width: 500px;
-    
-    
-    /* position: absolute; */
-    /* left: 0; */
-    /* top: 0; */
-}
-
-
-
 #web .webSlider .slider .slick_slide .s1-1full{
     margin-left: -70px;
     margin-top: -5px;
@@ -93,10 +70,6 @@ ul::after{
 #web .webSlider .slider .slick_slide .s1-2full{
     margin-left: -75px;
 }
-
-
-
-
 #web .webSlider .slider .slick_slide .s1-1 img{
     width: 80%;
 }
@@ -147,114 +120,78 @@ ul::after{
 #web .webSlider .slider .slick_slide .s1-2 .link{
     margin-top: 20px;
 }
-#web .webSlider .slick_slide .s1-2 .link a:first-child{
-    height: 43px;
+#web .webSlider .slick_slide .s1-2 .link a {
     background-color: #fff;
-    padding: 5px;
+    padding: 10px 20px;
     margin-right: 10px;
 }
 #web .webSlider .slick_slide .s1-2 .link a{
-    height: 43px;
-    padding: 5px;
-    background-color: #00FF75;
     color: #000;
     font-size: 13.5px;
     text-align: center;
 }
-
-
+#web .webSlider .slick_slide .s1-2 .link a:hover {background:#101010; color:#fff;}
 /* link */
-
-
-#web .webSlider .slider .slick_slide .s1-2 p img{
-
-}
-#web .webSlider .slider .slick_slide .s1-2 p img:nth-child(2){
-
-}
-#web .webSlider .slider .slick_slide .s1-2 p img:nth-child(3){
-
-}
-
-
+#web .webSlider .slider .slick_slide .s1-2 p img {}
+#web .webSlider .slider .slick_slide .s1-2 p img:nth-child(2) {}
+#web .webSlider .slider .slick_slide .s1-2 p img:nth-child(3) {}
+/* =============================배너디자인 */
 #banner h1{
     font-weight: bold;
     font-size: 40px;
     text-align: center;
     padding-top: 160px;
-
 }
 #banner .bannerSlider{
-    width: 1000px;
+    width: 1000px; margin: 100px auto 0;
     height: 350px;
-    position: absolute;
+    /* position: absolute;
     top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     overflow: hidden;
 }
-#banner .bannerSlider .slider{
+#banner .bannerSlider .slider {
     position: relative;
 }
-ul::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-#banner .bannerSlider .slider li{
-    float: left;
-    width: 1000px;
-    height: 350px;
-    font-size: 100px;
-    text-align: center;
-    line-height: 400px;
-    color: #eee;
-    font-size: 0;
-}
-#banner .bannerSlider .slider li.s1{position: relative;}
-#banner .bannerSlider .slider li.s2{position: relative;}
-#banner .bannerSlider .slider li.s3{position: relative;}
+#banner .bannerSlider .slider li {position: relative;}
+#banner .bannerSlider .slider li img {width:100%;}
+/* 배너 li 개별 선택자 */
+#banner .bannerSlider .slider li.s1{}
+#banner .bannerSlider .slider li.s2{}
+#banner .bannerSlider .slider li.s3{}
 #banner .bannerSlider .slider li.s4{background-color: #555;}
 #banner .bannerSlider .slider li.s5{background-color: #666;}
-
-
-#banner .bannerSlider .slider li.s1 img{width: auto; height: 100%;}
-#banner .bannerSlider .slider li.s2 img{width: 100%; height: auto; position: absolute; top: 20%; transform: translate(-50%);} 
-#banner .bannerSlider .slider li.s3 img{width: auto; height: 100%;} 
-
-
-
-
-
-// Styling the default Slick dots
-
-.slick-dots {
-	display: flex;
-	justify-content: center;
-	
-	margin: 0;
-	padding: 1rem 0;
-	
-	list-style-type: none;
-	
-		li {
-			margin: 0 0.25rem;
-		}
-	
-		button {
-			display: block;
-			width: 1rem;
-			height: 1rem;
-			padding: 0;
-			
-			border: none;
-			border-radius: 100%;
-			background-color: blue;
-			
-			text-indent: -9999px;
-		}
-	
-		li.slick-active button {
-			background-color: red;
-		}
-	
+/* =============================SNS디자인 프로젝트 */
+#sns h1{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 100px;
 }
+#sns .snsSlider{
+    width: 1000px; margin: 50px auto 0;
+    /* position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%); */
+    overflow: hidden;
+}
+#sns .snsSlider .slider {
+    position: relative;
+}
+#sns .snsSlider .slider li {position: relative; margin:5px;}
+#sns .snsSlider .slider li img {width:100%;}
+/* 배너 li 개별 선택자 */
+#sns .snsSlider .slider li.s1{}
+#sns .snsSlider .slider li.s2{}
+#sns .snsSlider .slider li.s3{}
+#sns .snsSlider .slider li.s4{}
+#sns .snsSlider .slider li.s5{}
+/* ==========================웹 + 배너 + SNS 공통 */
+/* ==========================슬라이더 페이지번호 */
+.slider .slick-dots {width:max-content; position:relative !important; margin:0 auto; top:10px;}
+.slider .slick-dots li {float:left; width:max-content;}
+/* 비활성화 페이지번호 색상 */
+.slider .slick-dots li button::before {color:#101010 !important;}
+.slider .slick-dots li.slick-active {}
+/* 활성화 페이지번호 색상 */
+.slider .slick-dots li.slick-active button::before {color:red !important;}

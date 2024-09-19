@@ -1,21 +1,19 @@
-#wrap .hash{
-    list-style: none;
+nav {
     position: fixed;
+    z-index:999;
     top: 20px; right: 20px;
     color: #444;
     font-weight: bold;
 }
-#wrap .hash li{
-    float: left;
-    margin-top: 13px;
+nav a{
     margin-left: 20px;
     color: #888;
 }
-#wrap .hash li.on{
+nav .on{
     color: #000;
 }
-#wrap>div{
-    height: 100vh;
+#wrap > div{
+    /* height: 100vh; */
 }
 #wrap .box1 img{height: 100vh; width: 100%;} 
 /* box1 */
