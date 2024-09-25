@@ -130,6 +130,12 @@ nav .on{
     position: relative;
     top: 35px;
 }
+#web .webSlider .slick_slide .s1-2 .link a:nth-child(5){
+    margin: 0 6px;
+    padding: 10px 23px;
+    position: relative;
+    top: 35px;
+}
 #web .webSlider .slick_slide .s1-2 .link a:hover {background:#101010; color:#fff;}
 /* link */
 #web .webSlider .slider .slick_slide .s1-2 p img {}
