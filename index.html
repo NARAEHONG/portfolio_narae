@@ -42,9 +42,9 @@
                             </p>
                             <div class="link">
                                 <a href="https://www.figma.com/design/rp1UdYaNnIrBkc4S2YH3qQ/madeca-prime_wireframe?node-id=0-1&t=8ik83X0apzXvnF02-1" target="_blank">Wireframe / Prototype</a>
-                                <a href="https://www.figma.com/proto/92MfVF17I8ZXnwDq6FDM21/madecaprime-PORTFOIO?node-id=0-68&node-type=symbol&t=7kn07rUxY3mXnrBC-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A68" target="_blank">최종 프로젝트 결과 확인</a>
-                                <a href="https://www.figma.com/proto/92MfVF17I8ZXnwDq6FDM21/madecaprime-PORTFOIO?node-id=1-555&node-type=frame&t=UiRmkkNorxWc4smo-8&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A68&hide-ui=1" target="_blank">모바일</a>
-                                <a href="https://www.figma.com/proto/92MfVF17I8ZXnwDq6FDM21/madecaprime-PORTFOIO?node-id=1-279&node-type=frame&t=M1tbhNiLf5DJEABv-8&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A68&hide-ui=1" target="_blank">태블릿</a>
+                                <a href="https://www.figma.com/proto/92MfVF17I8ZXnwDq6FDM21/madecaprime-PORTFOIO?page-id=0%3A1&node-id=0-68&node-type=symbol&viewport=3314%2C845%2C0.11&t=hZANPYQL4iTbEns9-8&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=0%3A68&hide-ui=1" target="_blank">최종 프로젝트 결과 확인</a>
+                                <a href="https://www.figma.com/proto/92MfVF17I8ZXnwDq6FDM21/madecaprime-PORTFOIO?page-id=0%3A1&node-id=1-555&node-type=symbol&viewport=3314%2C845%2C0.11&t=hZANPYQL4iTbEns9-8&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=0%3A68&hide-ui=1" target="_blank">모바일</a>
+                                <a href="https://www.figma.com/proto/92MfVF17I8ZXnwDq6FDM21/madecaprime-PORTFOIO?page-id=0%3A1&node-id=1-279&node-type=symbol&viewport=3314%2C845%2C0.11&t=hZANPYQL4iTbEns9-8&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=0%3A68&hide-ui=1" target="_blank">태블릿</a>
                             </div>
                         </div>
                         </div>
@@ -159,6 +159,13 @@
                     <li class="s1"><img src="img/event_banner.png" alt=""></li>
                     <li class="s2"><img src="img/plac_benner.png" alt=""></li>
                 </ul>
+            <!-- 닫기 버튼 -->
+            <a href="#" class="open_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </a>
             </div>
         </div>
         <div id="sns" class="section">
@@ -166,8 +173,15 @@
             <div class="snsSlider">
                 <ul class="slider">
                     <li class="s1"><img src="img/madeca_banner.png" alt=""></li>
-                    <li class="s2"><img src="img/sns2_img.jpg" alt=""></li>
+                    <li class="s2"><img src="img/sns3_img.png" alt=""></li>
                 </ul>
+                <!-- 닫기 버튼 -->
+                <a href="#" class="open_S_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                </a>
             </div>
             <!-- <ul class="pager">
                 <li class="on"></li>
@@ -186,13 +200,6 @@
         <div class="cls"></div>
         <figure></figure>
         </div>
-        <!-- 닫기 버튼 -->
-        <a href="#" class="open_btn">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
     </div>
     <!-- 스크립트 시작 -->
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -265,11 +272,20 @@
         //버튼 입력 시작 -> 추가 변경 사항 
         $('.bannerSlider li').on('click', function(event){
         event.preventDefault();//a태그의 href기능을 막음
-        $('.open_btn span').show();
+        $('.open_btn').show();
         });
-        $('.open_btn').on('click', function(e){
+        $('.open_btn,.cover').on('click', function(e){
         e.preventDefault();
-        $('.bannerSlider li').hide();
+        $('.cover,.open_btn').hide();
+        });
+        //버튼 입력 시작 -> 추가 변경 사항 
+        $('.snsSlider li').on('click', function(event){
+        event.preventDefault();//a태그의 href기능을 막음
+        $('.open_S_btn').show();
+        });
+        $('.open_S_btn,.cover').on('click', function(e){
+        e.preventDefault();
+        $('.cover,.open_S_btn').hide();
         });
         //충돌 삭제
         /*let w = $('.slider li').width(),
@@ -320,7 +336,6 @@
                 })
             }
         }) */
-
     </script>
 </body>
 </html>
