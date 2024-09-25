@@ -42,7 +42,9 @@
                             </p>
                             <div class="link">
                                 <a href="https://www.figma.com/design/rp1UdYaNnIrBkc4S2YH3qQ/madeca-prime_wireframe?node-id=0-1&t=8ik83X0apzXvnF02-1" target="_blank">Wireframe / Prototype</a>
-                                <a href="https://www.figma.com/design/92MfVF17I8ZXnwDq6FDM21/madecaprime-PORTFOIO?node-id=0-1&t=0YLgRHot3JGunGbl-1" target="_blank">최종 프로젝트 결과 확인</a>
+                                <a href="https://www.figma.com/proto/92MfVF17I8ZXnwDq6FDM21/madecaprime-PORTFOIO?node-id=0-68&node-type=symbol&t=7kn07rUxY3mXnrBC-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A68" target="_blank">최종 프로젝트 결과 확인</a>
+                                <a href="https://www.figma.com/proto/92MfVF17I8ZXnwDq6FDM21/madecaprime-PORTFOIO?node-id=1-555&node-type=frame&t=UiRmkkNorxWc4smo-8&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A68&hide-ui=1" target="_blank">모바일</a>
+                                <a href="https://www.figma.com/proto/92MfVF17I8ZXnwDq6FDM21/madecaprime-PORTFOIO?node-id=1-279&node-type=frame&t=M1tbhNiLf5DJEABv-8&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A68&hide-ui=1" target="_blank">태블릿</a>
                             </div>
                         </div>
                         </div>
@@ -164,7 +166,7 @@
             <div class="snsSlider">
                 <ul class="slider">
                     <li class="s1"><img src="img/madeca_banner.png" alt=""></li>
-                    <li class="s2"><img src="img/sns2_img.png" alt=""></li>
+                    <li class="s2"><img src="img/sns2_img.jpg" alt=""></li>
                 </ul>
             </div>
             <!-- <ul class="pager">
@@ -179,6 +181,18 @@
                 <li>2</li>
             </ul> -->
         </div>
+        <!-- 커버 추가 이미지 크기 -->
+        <div class="cover">
+        <div class="cls"></div>
+        <figure></figure>
+        </div>
+        <!-- 닫기 버튼 -->
+        <a href="#" class="open_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </div>
     <!-- 스크립트 시작 -->
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -199,7 +213,6 @@
                 $('nav a[href="#' + anchorLink + '"]').addClass('on');
             }
         })
-
         //웹 프로젝트 슬라이드
         $('.webSlider .slider').slick({
             autoplay:true,
@@ -221,7 +234,43 @@
             slidesToScroll: 2,
             infinite: true,
         });
-        
+        /* 새 작업 이미지 누르면 크게 띄우기 */
+        $('.bannerSlider li').on('click', function(){
+        $('.cover').fadeIn();
+        // .html()
+        // 내가 클릭한 div의 html을 .cover figure에 출력
+        let _img = $(this).html();
+        // 내가 클릭한 div의 html요소를 가져와서 변수 저장
+        // console.log(_img);
+        $('.cover figure').html(_img);
+        // cover figure의 html을 _img로 바꿔줌
+        });
+        $('.cover .cls').on('click', function(){
+        $(this).parent().fadeOut();
+        })
+        /* SNS 이미지 띄우기 */
+        $('.snsSlider li').on('click', function(){
+        $('.cover').fadeIn();
+        // .html()
+        // 내가 클릭한 div의 html을 .cover figure에 출력
+        let _img = $(this).html();
+        // 내가 클릭한 div의 html요소를 가져와서 변수 저장
+        // console.log(_img);
+        $('.cover figure').html(_img);
+        // cover figure의 html을 _img로 바꿔줌
+        });
+        $('.cover .cls').on('click', function(){
+        $(this).parent().fadeOut();
+        })
+        //버튼 입력 시작 -> 추가 변경 사항 
+        $('.bannerSlider li').on('click', function(event){
+        event.preventDefault();//a태그의 href기능을 막음
+        $('.open_btn span').show();
+        });
+        $('.open_btn').on('click', function(e){
+        e.preventDefault();
+        $('.bannerSlider li').hide();
+        });
         //충돌 삭제
         /*let w = $('.slider li').width(),
             c = $('.slider li').length;
