@@ -149,7 +149,7 @@ nav .on{
     padding-top: 160px;
 }
 #banner .bannerSlider{
-    width: 1000px; margin: 100px auto 0;
+    width: 1200px; margin: 100px auto 0;
     height: 350px;
     /* position: absolute;
     top: 50%; left: 50%;
@@ -175,7 +175,7 @@ nav .on{
     padding-top: 100px;
 }
 #sns .snsSlider{
-    width: 1000px; margin: 50px auto 0;
+    width: 1500px; margin: 50px auto 0;
     /* position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%); */
